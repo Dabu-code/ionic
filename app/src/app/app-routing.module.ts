@@ -7,10 +7,15 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'scanner-qr',
+    loadChildren: () => import('./modules/scanner-qr/scanner-qr.module').then( m => m.ScannerQRPageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },
+  }, 
+
 ];
 
 @NgModule({
