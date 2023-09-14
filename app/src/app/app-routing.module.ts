@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'notification-push',
+    loadChildren: () => import('./modules/notification-push/notification-push.module').then( m => m.NotificationPushPageModule)
   },
+
 ];
 
 @NgModule({
