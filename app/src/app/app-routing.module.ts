@@ -6,11 +6,17 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
+
+  {
+    path: 'maps',
+    loadChildren: () => import('./modules/maps/maps.module').then( m => m.MapsPageModule)
+  },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'maps',
     pathMatch: 'full'
   },
+
 ];
 
 @NgModule({
