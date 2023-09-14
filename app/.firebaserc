@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "testdb-d82cc": {
+      "hosting": {
+        "app": [
+          "testdb-d82cc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "testdb-d82cc"
+  }
+}
