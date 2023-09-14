@@ -7,12 +7,13 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },  {
     path: 'notification-push',
     loadChildren: () => import('./modules/notification-push/notification-push.module').then( m => m.NotificationPushPageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'notification-push',
+    pathMatch: 'full'
   },
 
 ];
